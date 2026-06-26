@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthTech - Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header-principal" id="inicio">
+    
+    <div class="header-superior">
+        <div class="logo-contenedor">
+            <a href="index.html">
+                <img src="https://lh3.googleusercontent.com/u/0/d/1SKn1fql2OPGDvnSzhg6VXNJuXaZdXokR" alt="HealthTech Logo" class="logo-img">
+            </a>
+        </div>
+        <h1>HealthTech: Donde la Medicina y la Técnica se Encuentran</h1>
+    </header>
+
+    <nav id="menu-navegacion">
+            <button type="button" class="boton-perfil" data-target="index.html">Inicio</button>
+            <button type="button" class="boton-perfil" data-target="sectorclinico.html">Sector Clínico</button>
+            <button type="button" class="boton-perfil" data-target="sectortecnico.html">Sector Técnico</button>
+            <button type="button" class="boton-perfil" data-target="contacto.html">Contacto</button>
+    </nav>
+
+    <main class="contact-container">
+        <h2>Contacto / Comentarios</h2>
+        <p>¿Tienes dudas o comentarios sobre HealthTech? Escríbenos y te responderemos lo antes posible.</p>
+        
+        <div id="mensaje-exito">
+            ¡Gracias por tu mensaje! El formulario se ha enviado correctamente.
+        </div>
+
+        <form id="contact-form" novalidate method="POST" action="https://script.google.com/macros/s/AKfycbzHh-R1j5gwj-EXgfu4oHvwGGRN15KKi-5lkKDgERj8LfII1ryXkoR4tI9lmK3DEKTdGw/exec">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
+                <span class="error-text" id="error-nombre">El nombre es obligatorio.</span>
+            </div>
+
+            <div class="form-group">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+                <span class="error-text" id="error-correo">Por favor, introduce un correo válido.</span>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje o Comentarios:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                <span class="error-text" id="error-mensaje">El mensaje no puede estar vacío.</span>
+            </div>
+
+            <button type="submit" id="btn-enviar">Enviar Mensaje</button>
+        </form>
+    </main>
+ <footer>
+            <h3>HealthTech: Proyecto Educativo</h3>
+            <p>Explorando la sinergia entre las Ciencias de la Salud y el Área Técnica.</p>
+        </footer>
+</body>
+</html>
